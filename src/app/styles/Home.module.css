@@ -30,7 +30,7 @@
 /* ダークモード用のスタイル */
 :global(.dark) .top {
     /* ダークモード時の背景色 */
-    background-color: var(--card);
+    background-color: var(--background);
 }
 
 .top_msg {
