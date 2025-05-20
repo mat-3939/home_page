@@ -1,7 +1,9 @@
 /*遷移用のLinkコンポーネントを読み込む*/
 import Link from 'next/link';
 /*Navbar.module.cssを読み込む*/
-import styles from '../styles/Navbar.module.css';
+import styles from '../styles/common/Navbar.module.css';
+/*ホームアイコンを読み込む*/
+import dliHome from '../styles/icon/dli-home.module.css';
 
 /*Navbarコンポーネントを定義する*/
 export default function Navbar() {
@@ -13,7 +15,7 @@ export default function Navbar() {
             {/*リストを作成*/}
             <ul>
                 {/*リストの各要素を作成*/}
-                <li><Link href="/">WebSite</Link></li>
+                <li><Link href="/"><span className={dliHome.dli_home}></span></Link></li>
                 <li><Link href="/">TOP</Link></li>
                 <li><Link href="/contact">CONTACT</Link></li>
             </ul>

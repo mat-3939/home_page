@@ -3,7 +3,7 @@
 /*Reactを読み込む*/
 import React from "react";
 /*フッターのスタイルを読み込む*/
-import styles from "../styles/Footer.module.css"
+import styles from "../styles/common/Footer.module.css"
 /*ボタンコンポーネントを読み込む*/
 import { Button } from '@/components/ui/button';
 /*スイッチコンポーネントを読み込む*/

@@ -1,0 +1,42 @@
+/*ホームアイコン*/
+.dli_home {
+    --icon-size: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    line-height: 1;
+    position: relative;
+    width: calc(var(--icon-size) * 1em);
+    height: calc(var(--icon-size) * 0.75em);
+    border: calc(0.1em * var(--icon-size)) solid currentColor;
+    border-top: 0;
+    box-sizing: border-box;
+}
+
+.dli_home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: calc(0.70711em * var(--icon-size));
+    height: calc(0.70711em * var(--icon-size));
+    border: calc(0.1em * var(--icon-size)) solid currentColor;
+    border-right: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translate(-50%, -46%) rotate(45deg) skew(-10deg, -10deg);
+}
+
+.dli_home::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: calc(-0.1em * var(--icon-size));
+    width: calc(45% * var(--icon-size));
+    height: calc(65% * var(--icon-size));
+    background: #fff;
+    border: calc(0.1em * var(--icon-size)) solid currentColor;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+}

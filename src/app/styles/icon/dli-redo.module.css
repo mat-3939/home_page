@@ -1,0 +1,41 @@
+/*リロードボタンアイコン*/
+.dli_redo {
+    --icon-size: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    line-height: 1;
+    position: relative;
+    width: calc(var(--icon-size) * 1em);
+    height: calc(var(--icon-size) * 1em);
+    transform: rotate(45deg);
+}
+
+.dli_redo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border: calc(0.1em * var(--icon-size)) solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transform: rotate(-45deg);
+}
+
+.dli_redo::after {
+    content: '';
+    position: absolute;
+    top: calc(0.05em * var(--icon-size));
+    right: 50%;
+    width: calc(0.2em * var(--icon-size));
+    height: calc(0.2em * var(--icon-size));
+    border: calc(0.1em * var(--icon-size)) solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: content-box;
+    transform: translateX(calc(0.14142em * var(--icon-size))) rotate(45deg);
+    transform-origin: top right;
+}

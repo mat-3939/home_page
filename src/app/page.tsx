@@ -6,12 +6,12 @@ export default function Home() {
   <>
       <Navbar />
     <header className={styles.top}>
-      <h1 className={styles.top_msg}>ToyBox</h1>
+      <h1 className={styles.top_msg}>Toy Box</h1>
     </header>
     <main>
         <section className={styles.content}>
           <h2>websiteの最新情報</h2>
-          <p>最新の情報をご案内します。</p>
+          <p>内容何を書こう？</p>
         </section>
     </main>
       <Footer />
