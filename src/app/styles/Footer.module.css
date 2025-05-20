@@ -8,6 +8,16 @@
     position: sticky;
     top: 100vh;
 }
+
+.copyright {
+    text-align: center;
+    flex: 1;
+}
+
+.modeSwitch {
+    margin-left: auto;
+    margin-right: 10px;
+}
 /*スマホ対応*/
 @media screen and (max-width: 640px) {
     .footer {

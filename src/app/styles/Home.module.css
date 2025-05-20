@@ -2,7 +2,9 @@
     /* 背景に取得した画像を設定 */
     background-image: url("/images/top1.jpg");
     /* 画像をいっぱいに表示 */
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     /* 表示する高さを画面の40％に */
     height: 40vh;
     /* 表示幅を画面の90%に */
@@ -15,11 +17,31 @@
     align-items: center;
     /* テキストの配置を中央揃えに */
     text-align: center;
+    /* 背景色を設定（ライトモード用） */
+    background-color: #fff;
+    /* パディングを追加 */
+    padding: 20px;
+    /* 角丸にする */
+    border-radius: 8px;
+    /* トランジションを追加 */
+    transition: background-color 0.3s ease;
+}
+
+/* ダークモード用のスタイル */
+:global(.dark) .top {
+    /* ダークモード時の背景色 */
+    background-color: var(--card);
 }
 
 .top_msg {
-    /* 文字色を黒に */
-    color: black;
+    /* 文字色を白に */
+    color: #fff;
+    /* 文字のふちを黒に */
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
 }
 
 .content {
@@ -27,3 +49,5 @@
     margin: 0 auto;
     text-align: center;
 }
+
+

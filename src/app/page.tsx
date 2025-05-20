@@ -6,7 +6,7 @@ export default function Home() {
   <>
       <Navbar />
     <header className={styles.top}>
-      <h1 className={styles.top_msg}>bluecode, Lifestyle developer.</h1>
+      <h1 className={styles.top_msg}>ToyBox</h1>
     </header>
     <main>
         <section className={styles.content}>
