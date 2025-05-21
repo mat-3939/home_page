@@ -1,79 +1,87 @@
-# このプロジェクトについて
+# Toy Box - パーソナルウェブサイト
 
-これは [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) で作成された [Next.js](https://nextjs.org) プロジェクトです。
+「Toy Box」は、Web開発の学習と実験のために制作した<br>
+シンプルで使いやすいパーソナルウェブサイトです。  
+モダンなデザインと直感的なユーザーインターフェースを備え、ダークモードにも対応しています。<br>
+コンタクトページも完備したシンプルな構成になっています。
 
-## はじめに
+---
 
-まず、開発サーバーを起動してください:
+## 使用技術
 
-```bash
-npm run dev
-# または
-yarn dev
-# または
-pnpm dev
-# または
-bun dev
+- フロントエンド：React / Next.js / TypeScript
+- スタイリング：Tailwind CSS 
+- テーマ管理：next-themes
+- その他：GitHub（バージョン管理）
+
+---
+
+## フォルダ構造
+
+```
+src/
+└── app/
+    ├── components/
+    │   ├── layout/
+    │   │   ├── Navbar.js
+    │   │   └── Footer.js
+    │   └── ui/
+    ├── lib/
+    │   ├── hooks/
+    │   │   └── useThemeSwitch.ts
+    │   └── theme-provider.tsx
+    ├── styles/
+    │   ├── common/
+    │   ├── icon/
+    │   ├── Home.module.css
+    │   └── globals.css
+    ├── contact/
+    │   └── page.js
+    ├── layout.tsx
+    └── page.tsx
 ```
 
-ブラウザで [http://localhost:3000](http://localhost:3000) を開いて結果を確認できます。
+---
 
-`app/page.tsx` を編集することでページの内容を変更できます。ファイルを編集するとページは自動的に更新されます。
+## 機能一覧
 
-このプロジェクトは [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) を使用して [Geist](https://vercel.com/font) フォントファミリーを自動的に最適化・読み込みします。
+| 機能カテゴリ | 機能名 | 概要 |
+| ----------- | ------ | ---- |
+| レイアウト | Navbar | サイトナビゲーション、ダークモード切替ボタンを提供 |
+| レイアウト | Footer | サイト情報、リンク、著作権表示を提供 |
+| テーマ | ダークモード | ユーザーが明るいテーマと暗いテーマを切り替え可能 |
+| ページ | ホーム | ウェブサイトのメイン情報を表示 |
+| ページ | コンタクト | 問い合わせフォームを提供 |
 
-## さらに学ぶ
+---
 
-Next.js についてさらに学ぶには、以下のリソースをご覧ください:
+## セットアップと実行方法
 
-- [Next.js ドキュメント](https://nextjs.org/docs) - Next.js の機能やAPIについて学べます。
-- [Learn Next.js](https://nextjs.org/learn) - インタラクティブなNext.jsチュートリアルです。
-
-[Next.jsのGitHubリポジトリ](https://github.com/vercel/next.js) もご覧いただけます。フィードバックやコントリビューションも歓迎されています！
-
-## Vercel でデプロイ
-
-Next.jsアプリをデプロイする最も簡単な方法は、Next.jsの開発元である [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) を利用することです。
-
-詳細は [Next.jsのデプロイメントドキュメント](https://nextjs.org/docs/app/building-your-application/deploying) をご覧ください。
--------------------------------------------------------------------------------------------------
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+1. リポジトリをクローン
+```
+git clone [リポジトリURL]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. 依存関係をインストール
+```
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. 開発サーバーを起動
+```
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. ブラウザでアクセス
+```
+http://localhost:3000
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 参考資料
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-## 参照
-
-参照:[qiita](https://qiita.com/minimumskills/items/a044d4abafb72c3e1681)
+- [Next.js ドキュメント](https://nextjs.org/docs)
+- [Tailwind CSS ドキュメント](https://tailwindcss.com/docs)
+- [next-themes](https://github.com/pacocoursey/next-themes)
+- [qiita](https://qiita.com/minimumskills/items/a044d4abafb72c3e1681)

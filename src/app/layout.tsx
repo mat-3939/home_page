@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/globals.css";
 import React from "react"
-import "@/app/styles/globals.css";
-import { ThemeProvider } from "@/app/theme-provider"
+import { ThemeProvider } from "@/app/lib/theme-provider"
+
 interface RootLayoutProps {
   children: React.ReactNode
 }
