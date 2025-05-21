@@ -1,7 +1,8 @@
 'use client'
 import styles from '../styles/Contact.module.css';
 import { useForm } from 'react-hook-form';
-
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 export default function Contact() {
     const {
         register,
@@ -28,7 +29,8 @@ export default function Contact() {
 
     return (
         <main class="contact_form">
-            <h2>お問合せ</h2>
+            <Navbar />
+            <h2>お問合せ(ダミー)</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className={styles.form_group}>
                     <label>お名前</label>
@@ -62,6 +64,7 @@ export default function Contact() {
                 </div>
                 <button className={styles.submit_btn} id="submit_btn">送信</button>
             </form>
+            <Footer />
         </main >
     )
 }
