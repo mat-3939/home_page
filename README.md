@@ -84,4 +84,6 @@ http://localhost:3000
 - [Next.js ドキュメント](https://nextjs.org/docs)
 - [Tailwind CSS ドキュメント](https://tailwindcss.com/docs)
 - [next-themes](https://github.com/pacocoursey/next-themes)
-- [qiita](https://qiita.com/minimumskills/items/a044d4abafb72c3e1681)
+- [qiita:ページ基礎](https://qiita.com/minimumskills/items/a044d4abafb72c3e1681)
+- [qiita:ダークモード実装](https://qiita.com/kouz496/items/5dd4387a55b67bcb7c10)
+- [CSS_LABORATORY:各種アイコン](https://design-library.jp/lab/)
